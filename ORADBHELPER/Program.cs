@@ -1,0 +1,7 @@
+﻿
+namespace ORADBHELPER
+{
+    class Program
+    {
+    }
+}

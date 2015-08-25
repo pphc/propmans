@@ -1,0 +1,286 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BA592D94-67DA-4670-B05D-02A013FFB55A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <StartupObject>
+    </StartupObject>
+    <RootNamespace>PROPMANS.COLLECTIONS_MOD</RootNamespace>
+    <AssemblyName>PROPMANS.COLLECTIONS_MOD</AssemblyName>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>PROPMANS.COLLECTIONS.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>PROPMANS.COLLECTIONS.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DocumentationFile>PROPMANS.COLLECTIONS.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DocumentationFile>PROPMANS.COLLECTIONS.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ComponentFactory.Krypton.Toolkit, Version=4.4.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Data Export\TransactionLookUpForm.Designer.vb">
+      <DependentUpon>TransactionLookUpForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Data Export\TransactionLookUpForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Data Export\ACCPACBillingExportForm.Designer.vb">
+      <DependentUpon>ACCPACBillingExportForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Data Export\ACCPACBillingExportForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Data Export\ACCPACPaymentExportForm.Designer.vb">
+      <DependentUpon>ACCPACPaymentExportForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Data Export\ACCPACPaymentExportForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Data Export\QuickbooksTransUploaderForm.Designer.vb">
+      <DependentUpon>QuickbooksTransUploaderForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Data Export\QuickbooksTransUploaderForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Deposits\DepositedReceiptsForm.Designer.vb">
+      <DependentUpon>DepositedReceiptsForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Deposits\DepositedReceiptsForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Deposits\DepositsForm.Designer.vb">
+      <DependentUpon>DepositsForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Deposits\DepositsForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Deposits\UndepositedReceiptsForm.Designer.vb">
+      <DependentUpon>UndepositedReceiptsForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Deposits\UndepositedReceiptsForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Grid Definition\InvoicesTransactionsGridDisplay.vb" />
+    <Compile Include="Grid Definition\PaymentsTransactionsGridDisplay.vb" />
+    <Compile Include="Grid Definition\QuickbooksUploadGridDisplay.vb" />
+    <Compile Include="Grid Definition\DepositedReceiptsGridDisplay.vb" />
+    <Compile Include="Grid Definition\DepositsGridDisplay.vb" />
+    <Compile Include="Grid Definition\ORInventoryGridDisplay.vb" />
+    <Compile Include="Grid Definition\PaymentsGridDisplay.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Grid Definition\ReceiptsPaymentDetailsGridDisplay.vb" />
+    <Compile Include="Grid Definition\UndepositedReceiptsGridDisplay.vb" />
+    <Compile Include="Grid Definition\UnpaidInvoicesGridDisplay.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="OR Inquiry\ReceiptsLookupForm.Designer.vb">
+      <DependentUpon>ReceiptsLookupForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OR Inquiry\ReceiptsLookupForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OR Inquiry\ORInquiryForm.Designer.vb">
+      <DependentUpon>ORInquiryForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OR Inquiry\ORInquiryForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OR Inventory\NewORSeriesForm.Designer.vb">
+      <DependentUpon>NewORSeriesForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OR Inventory\NewORSeriesForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OR Inventory\ORINVENTORYForm.Designer.vb">
+      <DependentUpon>ORINVENTORYForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OR Inventory\ORINVENTORYForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Payments\ViewPostDatedChecksForm.Designer.vb">
+      <DependentUpon>ViewPostDatedChecksForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Payments\ViewPostDatedChecksForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Payments\NewPaymentsForm.Designer.vb">
+      <DependentUpon>NewPaymentsForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Payments\NewPaymentsForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Payments\ReceiptVerificationForm.Designer.vb">
+      <DependentUpon>ReceiptVerificationForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Payments\ReceiptVerificationForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Payments\UnpaidInvoicessForm.Designer.vb">
+      <DependentUpon>UnpaidInvoicessForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Payments\UnpaidInvoicessForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Data Export\TransactionLookUpForm.resx">
+      <DependentUpon>TransactionLookUpForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Data Export\ACCPACBillingExportForm.resx">
+      <DependentUpon>ACCPACBillingExportForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Data Export\ACCPACPaymentExportForm.resx">
+      <DependentUpon>ACCPACPaymentExportForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Data Export\QuickbooksTransUploaderForm.resx">
+      <DependentUpon>QuickbooksTransUploaderForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Deposits\DepositedReceiptsForm.resx">
+      <DependentUpon>DepositedReceiptsForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Deposits\DepositsForm.resx">
+      <DependentUpon>DepositsForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Deposits\UndepositedReceiptsForm.resx">
+      <DependentUpon>UndepositedReceiptsForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OR Inquiry\ReceiptsLookupForm.resx">
+      <DependentUpon>ReceiptsLookupForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OR Inquiry\ORInquiryForm.resx">
+      <DependentUpon>ORInquiryForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OR Inventory\NewORSeriesForm.resx">
+      <DependentUpon>NewORSeriesForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OR Inventory\ORINVENTORYForm.resx">
+      <DependentUpon>ORINVENTORYForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Payments\ViewPostDatedChecksForm.resx">
+      <DependentUpon>ViewPostDatedChecksForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Payments\NewPaymentsForm.resx">
+      <DependentUpon>NewPaymentsForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Payments\ReceiptVerificationForm.resx">
+      <DependentUpon>ReceiptVerificationForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Payments\UnpaidInvoicessForm.resx">
+      <DependentUpon>UnpaidInvoicessForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BCL\BCL.vbproj">
+      <Project>{7D6007B9-CE73-4FA7-8620-0F2C9E9E800A}</Project>
+      <Name>BCL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PROPMANS.BASE\PROPMANS.BASE_MOD.vbproj">
+      <Project>{DF1650DE-759D-4E79-A500-65858BB18863}</Project>
+      <Name>PROPMANS.BASE_MOD</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\QB.TRANS_VERIFIER\TransactionsVerifier.csproj">
+      <Project>{9BB0686E-C595-4EDB-AD6E-208E6ED65FFD}</Project>
+      <Name>TransactionsVerifier</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\QB.UPLOADER\QBooksUploader.csproj">
+      <Project>{564E83E6-A80F-4591-BDAC-DCE54F285EB3}</Project>
+      <Name>QBooksUploader</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

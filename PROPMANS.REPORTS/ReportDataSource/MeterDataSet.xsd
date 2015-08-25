@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="MeterDataSet" targetNamespace="http://tempuri.org/MeterDataSet.xsd" xmlns:mstns="http://tempuri.org/MeterDataSet.xsd" xmlns="http://tempuri.org/MeterDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="MeterDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="MeterDataSet" msprop:Generator_UserDSName="MeterDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="WATER_METER" msprop:Generator_TableClassName="WATER_METERDataTable" msprop:Generator_TableVarName="tableWATER_METER" msprop:Generator_TablePropName="WATER_METER" msprop:Generator_RowDeletingName="WATER_METERRowDeleting" msprop:Generator_RowChangingName="WATER_METERRowChanging" msprop:Generator_RowEvHandlerName="WATER_METERRowChangeEventHandler" msprop:Generator_RowDeletedName="WATER_METERRowDeleted" msprop:Generator_UserTableName="WATER_METER" msprop:Generator_RowChangedName="WATER_METERRowChanged" msprop:Generator_RowEvArgName="WATER_METERRowChangeEvent" msprop:Generator_RowClassName="WATER_METERRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="METER_ID" msprop:Generator_ColumnVarNameInTable="columnMETER_ID" msprop:Generator_ColumnPropNameInRow="METER_ID" msprop:Generator_ColumnPropNameInTable="METER_IDColumn" msprop:Generator_UserColumnName="METER_ID" type="xs:decimal" />
+              <xs:element name="CUST_UNIT_NO" msprop:Generator_ColumnVarNameInTable="columnCUST_UNIT_NO" msprop:Generator_ColumnPropNameInRow="CUST_UNIT_NO" msprop:Generator_ColumnPropNameInTable="CUST_UNIT_NOColumn" msprop:Generator_UserColumnName="CUST_UNIT_NO">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CUST_UNIT_SORT" msprop:Generator_ColumnVarNameInTable="columnCUST_UNIT_SORT" msprop:Generator_ColumnPropNameInRow="CUST_UNIT_SORT" msprop:Generator_ColumnPropNameInTable="CUST_UNIT_SORTColumn" msprop:Generator_UserColumnName="CUST_UNIT_SORT" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FULL_NAME" msprop:Generator_ColumnVarNameInTable="columnFULL_NAME" msprop:Generator_ColumnPropNameInRow="FULL_NAME" msprop:Generator_ColumnPropNameInTable="FULL_NAMEColumn" msprop:Generator_UserColumnName="FULL_NAME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="4000" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="METER_NUMBER" msprop:Generator_ColumnVarNameInTable="columnMETER_NUMBER" msprop:Generator_ColumnPropNameInRow="METER_NUMBER" msprop:Generator_ColumnPropNameInTable="METER_NUMBERColumn" msprop:Generator_UserColumnName="METER_NUMBER">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="INSTALLED_DATE" msprop:Generator_ColumnVarNameInTable="columnINSTALLED_DATE" msprop:Generator_ColumnPropNameInRow="INSTALLED_DATE" msprop:Generator_ColumnPropNameInTable="INSTALLED_DATEColumn" msprop:Generator_UserColumnName="INSTALLED_DATE" type="xs:dateTime" />
+              <xs:element name="START_READING" msprop:Generator_ColumnVarNameInTable="columnSTART_READING" msprop:Generator_ColumnPropNameInRow="START_READING" msprop:Generator_ColumnPropNameInTable="START_READINGColumn" msprop:Generator_UserColumnName="START_READING" type="xs:double" />
+              <xs:element name="METER_STATUS" msprop:Generator_ColumnVarNameInTable="columnMETER_STATUS" msprop:Generator_ColumnPropNameInRow="METER_STATUS" msprop:Generator_ColumnPropNameInTable="METER_STATUSColumn" msprop:Generator_UserColumnName="METER_STATUS">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CONNECTION_STATUS" msprop:Generator_ColumnVarNameInTable="columnCONNECTION_STATUS" msprop:Generator_ColumnPropNameInRow="CONNECTION_STATUS" msprop:Generator_ColumnPropNameInTable="CONNECTION_STATUSColumn" msprop:Generator_UserColumnName="CONNECTION_STATUS">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LAST_READING" msprop:Generator_ColumnVarNameInTable="columnLAST_READING" msprop:Generator_ColumnPropNameInRow="LAST_READING" msprop:Generator_ColumnPropNameInTable="LAST_READINGColumn" msprop:Generator_UserColumnName="LAST_READING" type="xs:decimal" minOccurs="0" />
+              <xs:element name="LAST_READING_DATE" msprop:Generator_ColumnVarNameInTable="columnLAST_READING_DATE" msprop:Generator_ColumnPropNameInRow="LAST_READING_DATE" msprop:Generator_ColumnPropNameInTable="LAST_READING_DATEColumn" msprop:Generator_UserColumnName="LAST_READING_DATE" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="WATER_READING" msprop:Generator_TableClassName="WATER_READINGDataTable" msprop:Generator_TableVarName="tableWATER_READING" msprop:Generator_TablePropName="WATER_READING" msprop:Generator_RowDeletingName="WATER_READINGRowDeleting" msprop:Generator_RowChangingName="WATER_READINGRowChanging" msprop:Generator_RowEvHandlerName="WATER_READINGRowChangeEventHandler" msprop:Generator_RowDeletedName="WATER_READINGRowDeleted" msprop:Generator_UserTableName="WATER_READING" msprop:Generator_RowChangedName="WATER_READINGRowChanged" msprop:Generator_RowEvArgName="WATER_READINGRowChangeEvent" msprop:Generator_RowClassName="WATER_READINGRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="METER_ID" msprop:Generator_ColumnVarNameInTable="columnMETER_ID" msprop:Generator_ColumnPropNameInRow="METER_ID" msprop:Generator_ColumnPropNameInTable="METER_IDColumn" msprop:Generator_UserColumnName="METER_ID" type="xs:decimal" />
+              <xs:element name="CUST_UNIT_NO" msprop:Generator_ColumnVarNameInTable="columnCUST_UNIT_NO" msprop:Generator_ColumnPropNameInRow="CUST_UNIT_NO" msprop:Generator_ColumnPropNameInTable="CUST_UNIT_NOColumn" msprop:Generator_UserColumnName="CUST_UNIT_NO">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CUST_UNIT_SORT" msprop:Generator_ColumnVarNameInTable="columnCUST_UNIT_SORT" msprop:Generator_ColumnPropNameInRow="CUST_UNIT_SORT" msprop:Generator_ColumnPropNameInTable="CUST_UNIT_SORTColumn" msprop:Generator_UserColumnName="CUST_UNIT_SORT" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FULL_NAME" msprop:Generator_ColumnVarNameInTable="columnFULL_NAME" msprop:Generator_ColumnPropNameInRow="FULL_NAME" msprop:Generator_ColumnPropNameInTable="FULL_NAMEColumn" msprop:Generator_UserColumnName="FULL_NAME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="4000" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="METER_NUMBER" msprop:Generator_ColumnVarNameInTable="columnMETER_NUMBER" msprop:Generator_ColumnPropNameInRow="METER_NUMBER" msprop:Generator_ColumnPropNameInTable="METER_NUMBERColumn" msprop:Generator_UserColumnName="METER_NUMBER">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="INSTALLED_DATE" msprop:Generator_ColumnVarNameInTable="columnINSTALLED_DATE" msprop:Generator_ColumnPropNameInRow="INSTALLED_DATE" msprop:Generator_ColumnPropNameInTable="INSTALLED_DATEColumn" msprop:Generator_UserColumnName="INSTALLED_DATE" type="xs:dateTime" />
+              <xs:element name="CONNECTION_STATUS" msprop:Generator_ColumnVarNameInTable="columnCONNECTION_STATUS" msprop:Generator_ColumnPropNameInRow="CONNECTION_STATUS" msprop:Generator_ColumnPropNameInTable="CONNECTION_STATUSColumn" msprop:Generator_UserColumnName="CONNECTION_STATUS">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PREVIOUS_READING" msprop:Generator_ColumnVarNameInTable="columnPREVIOUS_READING" msprop:Generator_ColumnPropNameInRow="PREVIOUS_READING" msprop:Generator_ColumnPropNameInTable="PREVIOUS_READINGColumn" msprop:Generator_UserColumnName="PREVIOUS_READING" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CURR_READING" msprop:Generator_ColumnVarNameInTable="columnCURR_READING" msprop:Generator_ColumnPropNameInRow="CURR_READING" msprop:Generator_ColumnPropNameInTable="CURR_READINGColumn" msprop:Generator_UserColumnName="CURR_READING" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

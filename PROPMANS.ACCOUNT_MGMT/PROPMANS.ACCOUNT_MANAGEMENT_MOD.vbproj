@@ -1,0 +1,203 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{24A53F3C-868C-45FE-868A-6B9C9CD31D31}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <StartupObject>
+    </StartupObject>
+    <RootNamespace>PROPMANS.ACCOUNT_MANAGEMENT</RootNamespace>
+    <AssemblyName>PROPMANS.ACCOUNT_MANAGEMENT</AssemblyName>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>PROPMANS.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>PROPMANS.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DocumentationFile>PROPMANS.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DocumentationFile>PROPMANS.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ComponentFactory.Krypton.Toolkit, Version=4.4.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Customer Accounts\CustomerAccountsForm.Designer.vb">
+      <DependentUpon>CustomerAccountsForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Customer Accounts\CustomerAccountsForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer Accounts\NewAddressForm.Designer.vb">
+      <DependentUpon>NewAddressForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Customer Accounts\NewAddressForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer Accounts\NewContactForm.Designer.vb">
+      <DependentUpon>NewContactForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Customer Accounts\NewContactForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer Accounts\NewHouseHoldMemberForm.Designer.vb">
+      <DependentUpon>NewHouseHoldMemberForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Customer Accounts\NewHouseHoldMemberForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Grid Definition\CustomerAddressGridDisplay.vb" />
+    <Compile Include="Grid Definition\CustomerContactsGridDisplay.vb" />
+    <Compile Include="Grid Definition\AccountHouseMemberGridDisplay.vb" />
+    <Compile Include="Grid Definition\CustomerAccountsGridDisplay.vb" />
+    <Compile Include="Grid Definition\CustomerUnitsGridDisplay.vb" />
+    <Compile Include="Grid Definition\InventoryListGridDisplay.vb" />
+    <Compile Include="Grid Definition\MeterApplicationGridDisplay.vb" />
+    <Compile Include="Meter Application\MeterApplicationForm.Designer.vb">
+      <DependentUpon>MeterApplicationForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Meter Application\MeterApplicationForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Unit Inventory\UnitInventory.Designer.vb">
+      <DependentUpon>UnitInventory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Unit Inventory\UnitInventory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Customer Accounts\CustomerAccountsForm.resx">
+      <DependentUpon>CustomerAccountsForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer Accounts\NewAddressForm.resx">
+      <DependentUpon>NewAddressForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer Accounts\NewContactForm.resx">
+      <DependentUpon>NewContactForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer Accounts\NewHouseHoldMemberForm.resx">
+      <DependentUpon>NewHouseHoldMemberForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Meter Application\MeterApplicationForm.resx">
+      <DependentUpon>MeterApplicationForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Unit Inventory\UnitInventory.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UnitInventory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\find.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BCL\BCL.vbproj">
+      <Project>{7D6007B9-CE73-4FA7-8620-0F2C9E9E800A}</Project>
+      <Name>BCL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PROPMANS.BASE\PROPMANS.BASE_MOD.vbproj">
+      <Project>{DF1650DE-759D-4E79-A500-65858BB18863}</Project>
+      <Name>PROPMANS.BASE_MOD</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PROPMANS.REPORTS\PROPMANS.REPORTS.vbproj">
+      <Project>{5761B3F0-9085-4206-8318-807E2D2F6E93}</Project>
+      <Name>PROPMANS.REPORTS</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

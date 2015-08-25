@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{196EFED9-575E-40DB-B021-5DD3E1FC44C4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <StartupObject>
+    </StartupObject>
+    <RootNamespace>PROPMANS.ADMIN_MOD</RootNamespace>
+    <AssemblyName>PROPMANS.ADMIN_MOD</AssemblyName>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>PROPMANS.ADMIN.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>PROPMANS.ADMIN.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DocumentationFile>PROPMANS.ADMIN.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DocumentationFile>PROPMANS.ADMIN.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ComponentFactory.Krypton.Toolkit, Version=4.4.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Data Change\BillingsDataChangeForm.Designer.vb">
+      <DependentUpon>BillingsDataChangeForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Data Change\BillingsDataChangeForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Data Change\DisplayReceiptsForm.Designer.vb">
+      <DependentUpon>DisplayReceiptsForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Data Change\DisplayReceiptsForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Data Change\PaymentsDataChangeForm.Designer.vb">
+      <DependentUpon>PaymentsDataChangeForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Data Change\PaymentsDataChangeForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Data Change\PenaltyAdjustmentsForm.Designer.vb">
+      <DependentUpon>PenaltyAdjustmentsForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Data Change\PenaltyAdjustmentsForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Grid Definition\BillingsDataChangeGridDisplay.vb" />
+    <Compile Include="Grid Definition\PenaltyAdjustmentsGridDisplay.vb" />
+    <Compile Include="Grid Definition\UserListGridDisplay.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Data Change\BillingsDataChangeForm.resx">
+      <DependentUpon>BillingsDataChangeForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Data Change\DisplayReceiptsForm.resx">
+      <DependentUpon>DisplayReceiptsForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Data Change\PaymentsDataChangeForm.resx">
+      <DependentUpon>PaymentsDataChangeForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Data Change\PenaltyAdjustmentsForm.resx">
+      <DependentUpon>PenaltyAdjustmentsForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BCL\BCL.vbproj">
+      <Project>{7D6007B9-CE73-4FA7-8620-0F2C9E9E800A}</Project>
+      <Name>BCL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PROPMANS.BASE\PROPMANS.BASE_MOD.vbproj">
+      <Project>{DF1650DE-759D-4E79-A500-65858BB18863}</Project>
+      <Name>PROPMANS.BASE_MOD</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Project Setup\" />
+    <Folder Include="Reference Files\" />
+    <Folder Include="User Management\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

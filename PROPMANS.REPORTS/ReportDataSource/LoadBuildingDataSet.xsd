@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="LoadBuildingDataSet" targetNamespace="http://tempuri.org/LoadBuildingDataSet.xsd" xmlns:mstns="http://tempuri.org/LoadBuildingDataSet.xsd" xmlns="http://tempuri.org/LoadBuildingDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="LoadBuildingDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="LoadBuildingDataSet" msprop:Generator_UserDSName="LoadBuildingDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="LoadBuilding" msprop:Generator_TableClassName="LoadBuildingDataTable" msprop:Generator_TableVarName="tableLoadBuilding" msprop:Generator_TablePropName="LoadBuilding" msprop:Generator_RowDeletingName="LoadBuildingRowDeleting" msprop:Generator_RowChangingName="LoadBuildingRowChanging" msprop:Generator_RowEvHandlerName="LoadBuildingRowChangeEventHandler" msprop:Generator_RowDeletedName="LoadBuildingRowDeleted" msprop:Generator_UserTableName="LoadBuilding" msprop:Generator_RowChangedName="LoadBuildingRowChanged" msprop:Generator_RowEvArgName="LoadBuildingRowChangeEvent" msprop:Generator_RowClassName="LoadBuildingRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="PHASE_NO" msdata:Caption="DataColumn1" msprop:Generator_ColumnVarNameInTable="columnPHASE_NO" msprop:Generator_ColumnPropNameInRow="PHASE_NO" msprop:Generator_ColumnPropNameInTable="PHASE_NOColumn" msprop:Generator_UserColumnName="PHASE_NO" type="xs:string" minOccurs="0" />
+              <xs:element name="B_C_NAME" msdata:Caption="DataColumn2" msprop:Generator_ColumnVarNameInTable="columnB_C_NAME" msprop:Generator_ColumnPropNameInRow="B_C_NAME" msprop:Generator_ColumnPropNameInTable="B_C_NAMEColumn" msprop:Generator_UserColumnName="B_C_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="UNIT_ID" msdata:Caption="DataColumn1" msprop:Generator_ColumnVarNameInTable="columnUNIT_ID" msprop:Generator_ColumnPropNameInRow="UNIT_ID" msprop:Generator_ColumnPropNameInTable="UNIT_IDColumn" msprop:Generator_UserColumnName="UNIT_ID" type="xs:string" minOccurs="0" />
+              <xs:element name="UNIT_NUMBER" msdata:Caption="DataColumn2" msprop:Generator_ColumnVarNameInTable="columnUNIT_NUMBER" msprop:Generator_ColumnPropNameInRow="UNIT_NUMBER" msprop:Generator_ColumnPropNameInTable="UNIT_NUMBERColumn" msprop:Generator_UserColumnName="UNIT_NUMBER" type="xs:string" minOccurs="0" />
+              <xs:element name="OWNER" msdata:Caption="DataColumn1" msprop:Generator_ColumnVarNameInTable="columnOWNER" msprop:Generator_ColumnPropNameInRow="OWNER" msprop:Generator_ColumnPropNameInTable="OWNERColumn" msprop:Generator_UserColumnName="OWNER" type="xs:string" minOccurs="0" />
+              <xs:element name="UNIT_TYPE" msdata:Caption="DataColumn2" msprop:Generator_ColumnVarNameInTable="columnUNIT_TYPE" msprop:Generator_ColumnPropNameInRow="UNIT_TYPE" msprop:Generator_ColumnPropNameInTable="UNIT_TYPEColumn" msprop:Generator_UserColumnName="UNIT_TYPE" type="xs:string" minOccurs="0" />
+              <xs:element name="UNIT_AREA" msdata:Caption="DataColumn3" msprop:Generator_ColumnVarNameInTable="columnUNIT_AREA" msprop:Generator_ColumnPropNameInRow="UNIT_AREA" msprop:Generator_ColumnPropNameInTable="UNIT_AREAColumn" msprop:Generator_UserColumnName="UNIT_AREA" type="xs:string" minOccurs="0" />
+              <xs:element name="SALE_STATUS" msprop:Generator_ColumnVarNameInTable="columnSALE_STATUS" msprop:Generator_ColumnPropNameInRow="SALE_STATUS" msprop:Generator_ColumnPropNameInTable="SALE_STATUSColumn" msprop:Generator_UserColumnName="SALE_STATUS" type="xs:string" minOccurs="0" />
+              <xs:element name="OCCUPANCY_STATUS" msprop:Generator_ColumnVarNameInTable="columnOCCUPANCY_STATUS" msprop:Generator_ColumnPropNameInRow="OCCUPANCY_STATUS" msprop:Generator_ColumnPropNameInTable="OCCUPANCY_STATUSColumn" msprop:Generator_UserColumnName="OCCUPANCY_STATUS" type="xs:string" minOccurs="0" />
+              <xs:element name="OCCUPANT" msprop:Generator_ColumnVarNameInTable="columnOCCUPANT" msprop:Generator_ColumnPropNameInRow="OCCUPANT" msprop:Generator_ColumnPropNameInTable="OCCUPANTColumn" msprop:Generator_UserColumnName="OCCUPANT" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="LoadBuildingSubReport" msprop:Generator_TableClassName="LoadBuildingSubReportDataTable" msprop:Generator_TableVarName="tableLoadBuildingSubReport" msprop:Generator_TablePropName="LoadBuildingSubReport" msprop:Generator_RowDeletingName="LoadBuildingSubReportRowDeleting" msprop:Generator_RowChangingName="LoadBuildingSubReportRowChanging" msprop:Generator_RowEvHandlerName="LoadBuildingSubReportRowChangeEventHandler" msprop:Generator_RowDeletedName="LoadBuildingSubReportRowDeleted" msprop:Generator_UserTableName="LoadBuildingSubReport" msprop:Generator_RowChangedName="LoadBuildingSubReportRowChanged" msprop:Generator_RowEvArgName="LoadBuildingSubReportRowChangeEvent" msprop:Generator_RowClassName="LoadBuildingSubReportRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="BLDG_LIST" msprop:Generator_ColumnVarNameInTable="columnBLDG_LIST" msprop:Generator_ColumnPropNameInRow="BLDG_LIST" msprop:Generator_ColumnPropNameInTable="BLDG_LISTColumn" msprop:Generator_UserColumnName="BLDG_LIST" type="xs:string" minOccurs="0" />
+              <xs:element name="CLUSTER_NUMBER" msprop:Generator_ColumnVarNameInTable="columnCLUSTER_NUMBER" msprop:Generator_ColumnPropNameInRow="CLUSTER_NUMBER" msprop:Generator_ColumnPropNameInTable="CLUSTER_NUMBERColumn" msprop:Generator_UserColumnName="CLUSTER_NUMBER" type="xs:int" minOccurs="0" />
+              <xs:element name="CONDO" msprop:Generator_ColumnVarNameInTable="columnCONDO" msprop:Generator_ColumnPropNameInRow="CONDO" msprop:Generator_ColumnPropNameInTable="CONDOColumn" msprop:Generator_UserColumnName="CONDO" type="xs:int" minOccurs="0" />
+              <xs:element name="PARKING" msprop:Generator_ColumnVarNameInTable="columnPARKING" msprop:Generator_ColumnPropNameInRow="PARKING" msprop:Generator_ColumnPropNameInTable="PARKINGColumn" msprop:Generator_UserColumnName="PARKING" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

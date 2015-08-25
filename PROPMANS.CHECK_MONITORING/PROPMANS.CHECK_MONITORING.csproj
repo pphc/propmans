@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A235C7DC-88E3-4CDC-82BF-475957E4BF2E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PROPMANS.CHECK_MONITORING</RootNamespace>
+    <AssemblyName>PROPMANS.CHECK_MONITORING</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ComponentFactory.Krypton.Toolkit, Version=4.4.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\DLL References\ComponentFactory.Krypton.Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ChecksARForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChecksARForm.Designer.cs">
+      <DependentUpon>ChecksARForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChecksAmountDistributionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChecksAmountDistributionForm.Designer.cs">
+      <DependentUpon>ChecksAmountDistributionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChecksUpdateForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChecksUpdateForm.Designer.cs">
+      <DependentUpon>ChecksUpdateForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CheckStatusUpdateForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CheckStatusUpdateForm.Designer.cs">
+      <DependentUpon>CheckStatusUpdateForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChecksDueReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChecksDueReportForm.Designer.cs">
+      <DependentUpon>ChecksDueReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CheckStatusReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CheckStatusReportForm.Designer.cs">
+      <DependentUpon>CheckStatusReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CheckStatusHistoryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CheckStatusHistoryForm.Designer.cs">
+      <DependentUpon>CheckStatusHistoryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="SearchARForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchARForm.Designer.cs">
+      <DependentUpon>SearchARForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewChecksPreviewForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewChecksPreviewForm.Designer.cs">
+      <DependentUpon>NewChecksPreviewForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewChecksForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewChecksForm.Designer.cs">
+      <DependentUpon>NewChecksForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ChecksARForm.resx">
+      <DependentUpon>ChecksARForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChecksAmountDistributionForm.resx">
+      <DependentUpon>ChecksAmountDistributionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChecksUpdateForm.resx">
+      <DependentUpon>ChecksUpdateForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CheckStatusUpdateForm.resx">
+      <DependentUpon>CheckStatusUpdateForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChecksDueReportForm.resx">
+      <DependentUpon>ChecksDueReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CheckStatusReportForm.resx">
+      <DependentUpon>CheckStatusReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CheckStatusHistoryForm.resx">
+      <DependentUpon>CheckStatusHistoryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchARForm.resx">
+      <DependentUpon>SearchARForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewChecksPreviewForm.resx">
+      <DependentUpon>NewChecksPreviewForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewChecksForm.resx">
+      <DependentUpon>NewChecksForm.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BCL\BCL.vbproj">
+      <Project>{7d6007b9-ce73-4fa7-8620-0f2c9e9e800a}</Project>
+      <Name>BCL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PROPMANS.BASE\PROPMANS.BASE_MOD.vbproj">
+      <Project>{df1650de-759d-4e79-a500-65858bb18863}</Project>
+      <Name>PROPMANS.BASE_MOD</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PROPMANS.REPORTS\PROPMANS.REPORTS.vbproj">
+      <Project>{5761b3f0-9085-4206-8318-807e2d2f6e93}</Project>
+      <Name>PROPMANS.REPORTS</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
